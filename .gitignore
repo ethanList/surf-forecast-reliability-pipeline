@@ -1,0 +1,13 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Secrets / credentials
+*.json
+!terraform/**/*.tf.json
+.env
+
+# OS/editor junk
+.DS_Store
+.vscode/

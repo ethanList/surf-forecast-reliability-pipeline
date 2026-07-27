@@ -11,3 +11,8 @@ __pycache__/
 # OS/editor junk
 .DS_Store
 .vscode/
+
+#Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup

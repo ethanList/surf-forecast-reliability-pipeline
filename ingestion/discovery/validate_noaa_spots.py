@@ -28,5 +28,6 @@ for name, (lat, lon) in spots.items():
     grid_resp = requests.get(grid_url, headers=headers)
     props = grid_resp.json().get("properties", {})
 
+
     has_wave_data = "waveHeight" in props or "primarySwellHeight" in props
     print(f"{name}: wave data {'✅ FOUND' if has_wave_data else '❌ MISSING'} | office={points_resp.json()['properties']['gridId']}")
